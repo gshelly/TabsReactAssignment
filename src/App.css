@@ -36,3 +36,35 @@
     transform: rotate(360deg);
   }
 }
+
+.tab {
+  text-align: center;
+  display: inline-block;
+  margin: 2px;
+  padding: 10px 20px;
+}
+
+.selectedTab {
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  animation: colorchange 2s infinite;
+}
+
+.nonSelectedTab {
+  color: black;
+  background-color: white;
+  border: 2px solid #bbbbbb;
+}
+
+.results {
+  width: 85%;
+  height: 100px;
+  margin: auto;
+  border: 2px solid #777777;
+}
+
+@keyframes colorchange {
+  0% { border-radius:0px; }
+  100% { border-radius:20px; }
+}
